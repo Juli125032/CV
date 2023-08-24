@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400&display=swap');
+
+.paragraph{
+    &--grey{
+        @include paragraph($color-grey-medium)
+    }
+
+    &--black{
+        @include paragraph($color-black)
+    }
+}
+
+.title{
+    &-primary{
+        @include title($color-primary)
+    }
+    
+    &--white{
+        @include title($color-white)
+    }
+
+    &--black{
+        @include title($color-black)
+    }
+    
+    &--blue{
+        @include title($color-blue) 
+    }
+
+    &--danger{
+        @include title($color-danger) 
+    }
+
+    &--success{
+        @include title($color-success) 
+    }
+
+    &:hover{
+        text-decoration: none;
+    }
+}
+
+
+
+.subtitle{
+    font-family: 'Poppins';
+    font-size: 1.4rem;
+    color: $color-grey-dark;
+    margin: 0;
+}
+
+.text{
+    color: $color-grey-dark;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    margin: 0;
+
+    &-primary{
+       color: $color-primary;
+    } 
+    &-white{
+        color: $color-white;
+     } 
+    &-secondary{
+        color: $color-secondary;
+    } 
+    &--grey{
+        color: $color-grey-medium;
+     } 
+    &-decorator{
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: #ffffff;
+        text-transform: uppercase;
+        font-weight: 900;
+        letter-spacing: 5px;
+        font-size: 40px;
+        margin: 0;
+    }
+}

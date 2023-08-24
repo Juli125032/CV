@@ -1,0 +1,23 @@
+﻿@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/base";
+@import "base/animations";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/buttons";
+@import "components/card";
+@import "components/header";
+@import "components/sections";
+@import "components/timeline";
+@import "components/form";
+@import "components/footer";
+
+body {
+  font-size: 62.5%;
+  font-family: "Quicksand", sans-serif;
+}
+
+

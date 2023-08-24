@@ -1,0 +1,104 @@
+.button{
+    &-primary{
+        @include button();
+        border: 1px solid transparent;
+        background: linear-gradient( 90deg, $color-primary, $color-secondary);
+        color: $color-white;
+
+        a{
+            color: $color-white !important;
+            text-decoration: none !important;
+        }
+
+        &:hover{
+            @include button();
+            animation: button-primary 0.3s forwards;
+        }
+    }
+
+    &-secondary{
+        @include button();
+        border: 1px solid $color-white;
+        background: transparent;
+        color: $color-white;
+        
+        a{
+            color: $color-white !important;
+            text-decoration: none !important;
+        }
+
+        &:hover{
+            @include button();
+            border: 1px solid transparent;
+            background: $color-white;
+            color: $color-primary;
+
+            a{
+                color: $color-primary !important;
+                text-decoration: none !important;
+            }
+        }
+    }
+
+    
+    &-tertiary{
+        @include button();
+        border: 1px solid $color-primary;
+        background: transparent;
+        color: $color-primary;
+        
+        a{
+            color: $color-primary !important;
+            text-decoration: none !important;
+        }
+
+        &:hover{
+            @include button();
+            border: 1px solid transparent;
+            background: $color-primary;
+            color: $color-white;
+
+            a{
+                color: $color-white !important;
+                text-decoration: none !important;
+            }
+        }
+    }
+}
+
+.button-icon{
+    color: white;
+    width: 30px;
+    font-size: 20px;
+    padding: 3px;
+    margin-top: 5px;
+    display: inline-flex;
+    border: none;
+    height: 30px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+
+    &--primary{
+        background-color: $color-primary;
+    }
+
+    &--secondary{
+        background-color: $color-secondary;
+    }
+
+    a{
+        color: white !important;
+        text-decoration: none !important;
+
+        &:hover{
+            text-decoration: none !important;
+        }
+    }
+
+    span{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

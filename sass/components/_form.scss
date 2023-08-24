@@ -1,0 +1,58 @@
+.form{
+    padding: 2rem;
+    background: linear-gradient(175deg, #4219dc, #a5b2ff);
+    border-radius: 30px;
+
+    &-group{
+        display: flex;
+        flex-direction: column;
+        margin: 1rem 0.5rem;
+    }
+    
+    &-label{
+        color: $color-white;
+        font-size: 0.9rem;
+        font-family: "Poppins";
+        font-weight: bold;
+    }
+
+    &-input{
+        padding: 1rem 0.5rem;
+        border-radius: 30px;
+        border: 2px solid $color-white;
+        font-size: 0.9rem;
+        font-family: "Poppins";
+        background-color: transparent;
+        color: white;
+        outline: none;
+    }
+}
+
+.form-white{
+    background: $color-white;
+    border-radius: 30px;
+
+    .form-group{
+        display: flex;
+        flex-direction: column;
+        margin: 1rem 0.5rem;
+    }
+    
+    .form-label{
+        color: $color-primary;
+        font-size: 0.9rem;
+        font-family: "Poppins";
+        font-weight: bold;
+    }
+
+    .form-input{
+        padding: 1rem 0.5rem;
+        border-radius: 30px;
+        border: 2px solid $color-primary;
+        font-size: 0.9rem;
+        font-family: "Poppins";
+        background-color: transparent;
+        color: $color-primary;
+        outline: none;
+    }
+}

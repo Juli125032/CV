@@ -1,0 +1,60 @@
+.timeline{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    font-family: "Poppins";
+    justify-content: start;
+    position: relative;
+
+    &-card{
+        background-color: $color-white;
+        padding: 2rem;
+        margin-top: 2rem;
+        border-radius: 20px;
+    }
+
+    &-item{
+        margin: 1rem;
+        text-align: left;
+        position: relative;
+
+        &::before{
+            content: "";
+            width: 20px;
+            height: 20px;
+            border-radius: 20px;
+            background-color: $color-primary;
+            position: absolute;
+            left: -32px;
+        }
+
+        &:not(:last-child):after{
+            content: "";
+            width: 4px;
+            height: 127%;
+            border-radius: 20px;
+            background-color: $color-primary;
+            position: absolute;
+            top: 0;
+            left: -24px;
+        }
+    }
+
+    &-title{
+        color: $color-primary;
+        font-size: 1rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin: 0;
+    }
+
+    &-year{
+        font-size: 0.8rem;
+        margin: 0;
+    }
+
+    &-text{
+        margin: 0;
+        font-size: 0.8rem;
+    }
+}
